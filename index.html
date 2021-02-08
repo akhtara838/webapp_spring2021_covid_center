@@ -79,7 +79,7 @@
 
                 <p>
                     <label for = "dd-cough">
-                        <span>Have you had any coughing in the past 2 weeks></span>
+                        <span>Have you had any coughing in the past 2 weeks?</span>
                         <strong><abbr title="required">*</abbr></strong>
                     </label>
                     <select id ="dd-cough" name = "dd-cough">
@@ -90,7 +90,7 @@
 
                 <p>
                     <label for = "dd-breath">
-                        <span>Have you had any shortness of breath or difficulty breathing in the past 2 weeks></span>
+                        <span>Have you had any shortness of breath or difficulty breathing in the past 2 weeks?</span>
                         <strong><abbr title="required">*</abbr></strong>
                     </label>
                     <select id ="dd-breath" name = "dd-breath">
@@ -101,7 +101,7 @@
 
                 <p>
                     <label for = "dd-fatigue">
-                        <span>Have you had any fatigue in the past 2 weeks></span>
+                        <span>Have you had any fatigue in the past 2 weeks?</span>
                         <strong><abbr title="required">*</abbr></strong>
                     </label>
                     <select id ="dd-fatigue" name = "dd-fatigue">
@@ -112,7 +112,7 @@
 
                 <p>
                     <label for = "dd-muscle">
-                        <span>Have you had any muscle or body aches in the past 2 weeks></span>
+                        <span>Have you had any muscle or body aches in the past 2 weeks?</span>
                         <strong><abbr title="required">*</abbr></strong>
                     </label>
                     <select id ="dd-muscle" name = "dd-muscle">
@@ -123,7 +123,7 @@
 
                 <p>
                     <label for = "dd-headache">
-                        <span>Have you had any headaches in the past 2 weeks></span>
+                        <span>Have you had any headaches in the past 2 weeks?</span>
                         <strong><abbr title="required">*</abbr></strong>
                     </label>
                     <select id ="dd-headache" name = "dd-headache">
@@ -134,7 +134,7 @@
 
                 <p>
                     <label for = "dd-taste">
-                        <span>Have you had any loss of taste or smell in the past 2 weeks></span>
+                        <span>Have you had any loss of taste or smell in the past 2 weeks?</span>
                         <strong><abbr title="required">*</abbr></strong>
                     </label>
                     <select id ="dd-taste" name = "dd-taste">
@@ -145,7 +145,7 @@
 
                 <p>
                     <label for = "dd-throat">
-                        <span>Have you had a sore throat anytime in the past 2 weeks></span>
+                        <span>Have you had a sore throat anytime in the past 2 weeks?</span>
                         <strong><abbr title="required">*</abbr></strong>
                     </label>
                     <select id ="dd-throat" name = "dd-throat">
@@ -156,7 +156,7 @@
 
                 <p>
                     <label for = "dd-congestion">
-                        <span>Have you had any congestion or a runny nose in the past 2 weeks></span>
+                        <span>Have you had any congestion or a runny nose in the past 2 weeks?</span>
                         <strong><abbr title="required">*</abbr></strong>
                     </label>
                     <select id ="dd-congestion" name = "dd-congestion">
@@ -167,7 +167,7 @@
 
                 <p>
                     <label for = "dd-nausea">
-                        <span>Have you had any nausea or vomiting in the past 2 weeks></span>
+                        <span>Have you had any nausea or vomiting in the past 2 weeks?</span>
                         <strong><abbr title="required">*</abbr></strong>
                     </label>
                     <select id ="dd-nausea" name = "dd-nausea">
@@ -178,7 +178,7 @@
 
                 <p>
                     <label for = "dd-diarrhea">
-                        <span>Have you had any diarrhea in the past 2 weeks></span>
+                        <span>Have you had any diarrhea in the past 2 weeks?</span>
                         <strong><abbr title="required">*</abbr></strong>
                     </label>
                     <select id ="dd-diarrhea" name = "dd-diarrhea">
@@ -187,6 +187,62 @@
                     </select>
                 </p>
 
+            </fieldset>
+            <fieldset>
+                <legend>Part 3: Other Questions</legend>
+                <p>
+                    <label for="contact">
+                        <span>Have you had contact (within 6 feet for > 15 minutes), or caring for someone who is diagnosed 
+                            with COVID-19 in the last 14 days and were not wearing proper personal protective equipment? </span>
+                        <strong><abbr title="required">*</abbr></strong>
+                        <br>
+                    </label>
+                    <select id ="contact" name = "contact">
+                        <option value = "No" selected>No</option>
+                        <option value = "Yes">Yes</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="diagnosis">
+                        <span>Have you had a diagnosis of COVID-19 in the last 10 days? </span>
+                        <strong><abbr title="required">*</abbr></strong>
+                    </label>
+                    <select id ="diagnosis" name = "diagnosis">
+                        <option value = "No" selected>No</option>
+                        <option value = "Yes">Yes</option>
+                    </select>
+                </p>
+
+                <p>
+                        <fieldset>
+                            <label for="country">
+                                <span>Have you traveled to any countries in the past 14 days? </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <select id ="country" name = "country">
+                                <option value = "No" selected>No</option>
+                                <option value = "Yes">Yes</option>
+                            </select>
+                            <br>
+                            <label for = "txtcountry">
+                                <span>Which countries? (separate with commas) </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <input type ="text" id = "txtcountry" name="txtcountry" required>
+                        </fieldset>
+                </p>
+
+                <p>
+                    <label for="socialized">
+                        <span>Have you socialized with a group of 6 or more people in the last 14 days? </span>
+                        <strong><abbr title="required">*</abbr></strong>
+                    </label>
+                    <select id ="socialized" name = "socialized">
+                        <option value = "No" selected>No</option>
+                        <option value = "Yes">Yes</option>
+                    </select>
+                </p>
             </fieldset>
             <p>
                 <button type="submit">SUBMIT</button>
