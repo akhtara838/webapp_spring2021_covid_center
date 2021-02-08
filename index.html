@@ -195,7 +195,6 @@
                         <span>Have you had contact (within 6 feet for > 15 minutes), or caring for someone who is diagnosed <br>
                             with COVID-19 in the last 14 days and were not wearing proper personal protective equipment? </span>
                         <strong><abbr title="required">*</abbr></strong>
-                        <br>
                     </label>
                     <select id ="contact" name = "contact">
                         <option value = "No" selected>No</option>
@@ -245,9 +244,17 @@
                         <option value = "Yes">Yes</option>
                     </select>
                 </p>
+                <p>
+                    <label for="txttemp">
+                        <span>Current Temperature: </span>
+                        <strong><abbr title="required">*</abbr></strong>
+                    </label>
+                    <input type = "text" id = "txttemp" name = "txttemp" required pattern="\d{1,2}(\.\d{0,4})?">
+                </p>
             </fieldset>
             <p>
                 <button type="submit">SUBMIT</button>
+                <button type="reset">RESET</button>
             </p>
             </form>
         </article>
